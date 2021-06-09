@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Assignment 12</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="../stylesheets/style.css" />
+    </head>
+    <body>
+        <!--Question 1-->
+        <div class="js-task" id="link-event">
+            <h1>Link Event: Onclick</h1>
+            <a href="JavaScript:void(0)" onClick="alert('This is an alert box.')">Click Here</a>
+        </div>
+
+        <!--Question 2-->
+        <h1>Mobile Phone Lookup</h1>
+        <div class="js-task" id="image-event">
+            <div class="mobile-images" id="mobile-image-1"><img src="../images/Redmi-Note-5.jpg" onClick="alert('Thanks for purchasing a phone from us.')" alt="Redmi Note 5" /></div>
+            <div class="mobile-images" id="mobile-image-2"><img src="../images/Sharp-Aquous-R2.jpg" onClick="alert('Thanks for purchasing a phone from us.')" alt="Redmi Note 5" /></div>
+            <div class="mobile-images" id="mobile-image-3"><img src="../images/OnePlus-7t.jpg" onClick="alert('Thanks for purchasing a phone from us.')" alt="Redmi Note 5" /></div>
+            <div class="mobile-images" id="mobile-image-4"><img src="../images/Motorola-One.jpg" onClick="alert('Thanks for purchasing a phone from us.')" alt="Redmi Note 5" /></div>
+        </div>
+
+        <!--Question 3-->
+        <div class="js-task" id="row-delete-button">
+            <h1>Button Event: Onclick - Row Deleter</h1>
+            <table>
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th></th>
+                </tr>
+                <tr id="row-1">
+                    <td>0</td>
+                    <td>Hamza</td>
+                    <td>10</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-1'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-2">
+                    <td>1</td>
+                    <td>Ali</td>
+                    <td>9</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-2'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-3">
+                    <td>3</td>
+                    <td>Zubair</td>
+                    <td>8</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-3'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-4">
+                    <td>4</td>
+                    <td>Haris</td>
+                    <td>7</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-4'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-5">
+                    <td>5</td>
+                    <td>Waris</td>
+                    <td>6</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-5'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-6">
+                    <td>6</td>
+                    <td>Danish</td>
+                    <td>5</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-6'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-7">
+                    <td>7</td>
+                    <td>Bilal</td>
+                    <td>4</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-7'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-8">
+                    <td>8</td>
+                    <td>Zain</td>
+                    <td>3</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-8'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-9">
+                    <td>9</td>
+                    <td>Rafay</td>
+                    <td>2</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-9'));" />
+                        </form>
+                    </td>
+                </tr>
+                <tr id="row-10">
+                    <td>10</td>
+                    <td>Kashif</td>
+                    <td>1</td>
+                    <td>
+                        <form>
+                            <input type="button" value="Delete" onClick="deleteRow(getElementById('row-10'));" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Question 4-->
+        <div class="image-mouse-event">
+            <h1>Image Event: Mouseover and Mouseout</h1>
+            <div id="changing-bulb">
+                <img src="../images/bulb-off.jpg" onMouseover="src='../images/bulb-on.jpg'" onMouseout="src='../images/bulb-off.jpg'" alt="Bulb On/Off" />
+            </div>
+        </div>
+
+        <!--Question 5-->
+        <div class="counter-buttons">
+            <h1>Counter: Add and Subtract Buttons</h1>
+            <div id="count-screen">
+                0
+            </div>
+            <div class="counter-buttons">
+                <input id="counter-button-1" type="button" value="+" onClick="add(getElementById('count-screen'))" />
+                <input id="counter-button-2" type="button" value="-" onClick="subtract(getElementById('count-screen'))" />
+            </div>
+        </div>
+
+        <script src="../scripts//app.js"></script>
+    </body>
+</html>
